@@ -13,7 +13,11 @@ function App() {
   return (
     <div className="App">
       <h1>Class GitHub Summary</h1>
-      <StudentCard student={students[0]} />
+      {students.map((student) => (
+        <div key={student.username}>
+          <StudentCard student={student} />
+        </div>
+      ))}
     </div>
   );
 }

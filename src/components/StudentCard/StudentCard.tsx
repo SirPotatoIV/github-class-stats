@@ -7,8 +7,8 @@ type StudentCardProps = {
 
 export default function StudentCard({ student }: StudentCardProps) {
   return (
-    <div>
+    <>
       Name: {student.name} GitHub Username: {student.username}
-    </div>
+    </>
   );
 }
