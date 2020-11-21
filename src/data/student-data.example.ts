@@ -1,3 +1,7 @@
+// This is an example of how to format the student data to utilize this application
+// Copy/paste this file in this directory and rename it student-data.ts
+// .gitignore already includes this file to prevent student data from being published
+
 type Student = {
   name: string;
   username: string;
