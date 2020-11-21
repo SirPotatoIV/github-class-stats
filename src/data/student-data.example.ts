@@ -2,11 +2,10 @@
 // Copy/paste this file in this directory and rename it student-data.ts
 // .gitignore already includes this file to prevent student data from being published
 
-type Student = {
+export type Student = {
   name: string;
   username: string;
 };
-
 const students: Student[] = [
   {
     name: 'John Smith',
