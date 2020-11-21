@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1>Class GitHub Summary</h1>
-      <StudentCard />
+      <StudentCard student={students[0]} />
     </div>
   );
 }
