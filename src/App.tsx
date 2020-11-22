@@ -12,6 +12,7 @@ function App() {
           <StudentCard student={student} />
         </div>
       ))}
+      <img src="https://avatars0.githubusercontent.com/u/48859911?v=4" />
     </div>
   );
 }
