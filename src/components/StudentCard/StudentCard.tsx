@@ -4,13 +4,14 @@ import { getRepositories, getProfile } from '../../utils/github';
 
 type StudentCardProps = {
   student: Student;
+  getStudent: (username: string) => void;
 };
 
-export default function StudentCard({ student }: StudentCardProps) {
+export default function StudentCard({ student, getStudent }: StudentCardProps) {
   return (
     <>
       Name: {student.name} GitHub Username: {student.username}
-      <button onClick={() => getProfile(student)}>View Profile</button>
+      <button onClick={() => getStudent(student.username)}>View Profile</button>
     </>
   );
 }

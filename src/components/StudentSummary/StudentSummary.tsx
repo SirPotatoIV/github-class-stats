@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function StudentSummary(studentData) {
+export default function StudentSummary() {
   return (
     <div>
       <h1>Jake OToole</h1>

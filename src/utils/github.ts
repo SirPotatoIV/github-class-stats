@@ -9,10 +9,10 @@ const getRepositories = async (student: Student) => {
   return response;
 };
 
-const getProfile = async (student: Student) => {
-  const response = await axios.get(`${githubUrl}/users/${student.username}`);
-  console.log(response);
-  return response;
+const getProfile = async (student: string) => {
+  const { data } = await axios.get(`${githubUrl}/users/${student}`);
+  console.log(data);
+  return data;
 };
 
 export { getRepositories, getProfile };
