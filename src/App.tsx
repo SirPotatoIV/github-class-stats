@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Student, students } from './data/student-data';
-import { getRepositories, getProfile } from './utils/github';
+
+// components
 import StudentCard from './components/StudentCard/StudentCard';
 
-function App() {
-  const [student, setStudent] = useState({});
+// data and utils
+import { Student, students } from './data/student-data';
+import { getRepositories, getProfile } from './utils/github';
 
+function App() {
+  const [studentProfile, setStudentProfile] = useState({});
+
+  // Function declared here so that response can be passed to other components
   const getStudent = (username: string): void => {
-    const studentProfile = getProfile(username);
-    setStudent(studentProfile);
+    const profile = getProfile(username);
+    setStudentProfile(profile);
   };
 
   return (
