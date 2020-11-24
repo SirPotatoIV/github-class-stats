@@ -11,8 +11,9 @@ function App() {
   const [studentProfile, setStudentProfile] = useState<any>();
 
   // Function declared here so that response can be passed to other components
-  const getStudent = (username: string): void => {
-    const profile = getProfile(username);
+  const getStudent = async (username: string) => {
+    console.log(username);
+    const profile = await getProfile(username);
     setStudentProfile(profile);
   };
 
@@ -24,7 +25,7 @@ function App() {
           <StudentCard student={student} getStudent={getStudent} />
         </div>
       ))}
-      {studentProfile && <StudentSummary />}
+      {studentProfile && <StudentSummary studentProfile={studentProfile} />}
     </div>
   );
 }
