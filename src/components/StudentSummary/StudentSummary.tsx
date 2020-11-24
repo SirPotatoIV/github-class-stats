@@ -15,6 +15,8 @@ export default function StudentSummary({ studentProfile }: studentSummaryProps) 
       <p>
         Get Repos: <a href={studentProfile.repos_url}>{studentProfile.repos_url}</a>
       </p>
+      <p>Repo Count: {studentProfile.public_repos}</p>
+      <p>Last Update: {studentProfile.updated_at}</p>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Student } from '../../data/student-data.example';
-import { getRepositories, getProfile } from '../../utils/github';
 
 type StudentCardProps = {
   student: Student;

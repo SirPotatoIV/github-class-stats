@@ -4,8 +4,8 @@ import './App.css';
 import StudentCard from './components/StudentCard/StudentCard';
 import StudentSummary from './components/StudentSummary/StudentSummary';
 // data and utils
-import { Student, students } from './data/student-data';
-import { getRepositories, getProfile } from './utils/github';
+import { students } from './data/student-data';
+import { getProfile } from './utils/github';
 
 function App() {
   // type will need to be correct once I have decided what data to keep from the response
