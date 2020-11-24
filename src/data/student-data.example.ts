@@ -8,8 +8,8 @@ export type Student = {
 };
 const students: Student[] = [
   {
-    name: 'John Smith',
-    username: 'johnSmith1',
+    name: 'Jake OToole',
+    username: 'SirPotatoIV',
   },
   {
     name: 'Jane Doe',
