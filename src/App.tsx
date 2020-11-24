@@ -8,6 +8,7 @@ import { Student, students } from './data/student-data';
 import { getRepositories, getProfile } from './utils/github';
 
 function App() {
+  // type will need to be correct once I have decided what data to keep from the response
   const [studentProfile, setStudentProfile] = useState<any>();
 
   // Function declared here so that response can be passed to other components
